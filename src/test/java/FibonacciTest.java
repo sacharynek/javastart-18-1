@@ -15,7 +15,7 @@ public class FibonacciTest {
 
         //Arrange
         //Act
-        long calculatedValue = Fibonacci.calculateFibElements(input);
+        long calculatedValue = Fibonacci.calculateFibElements(input, 4_000_000);
         //Assert
         assertThat(calculatedValue).isEqualTo(output);
     }

@@ -1,6 +1,6 @@
 class Fibonacci {
 
-    static long calculateFibElements(int last) {
+    static long calculateFibElements(int last, int limit) {
         long a = 0, b = 1, c = 0, sum = 0;
         if (last <= 0) {
             return 0;
@@ -11,7 +11,7 @@ class Fibonacci {
             a = b;
             b = c;
             System.out.println("element numer " + i + " ciagu fibunacciego to " + c);
-            if (c >= 4_000_000) {
+            if (c >= limit) {
                 break;
             }
             if (c % 2 == 0) {
